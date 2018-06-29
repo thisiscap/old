@@ -1,0 +1,23 @@
+#
+# Config file for Jekyll
+#
+
+# Change timezone to London
+timezone: Europe/London
+
+# Remove dates from permalinks
+permalink: title
+
+# Keep this files out of the built site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Minify compiled SASS
+sass:
+  style: compressed
+
+# Add any plugins
+plugins:
+  - jemoji

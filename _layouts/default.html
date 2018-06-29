@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-GB">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+    <!-- Disable iOS auto-formatting numbers -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Favicons, icons and themes -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000">
+    <meta name="theme-color" content="#000">
+    <link rel="manifest" href="assets/manifest.json">
+
+    <!-- Social -->
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% endif %}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{ page.url | prepend: site.url }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% endif %}">
+
+    <!-- Preload webfonts -->
+    <!-- <link rel="preload" href="/assets/fonts/roboto-thin-webfont.woff2" as="font" type="font/woff2" crossorigin> -->
+
+  </head>
+
+  <body>
+
+    <main class="" id="content">
+
+      {% comment %} Output content from child templates {% endcomment %}
+      {{ content }}
+
+    </main>
+
+    <footer>
+      <p>That's all folks. :point_up: <a href="#content">to the top</a></p>
+      <p>Copyright 2018</p>
+    </footer>
+
+    <!-- Load remaining CSS styles -->
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" type="text/css" href="/assets/css/styles.css"/>
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
+  </body>
+
+</html>
