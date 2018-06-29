@@ -8,6 +8,9 @@ timezone: Europe/London
 # Remove dates from permalinks
 permalink: title
 
+# Define URL for sitemap and SEO
+url: "https://christopherporter.co.uk"
+
 # Keep this files out of the built site
 exclude:
   - README.md
@@ -20,4 +23,6 @@ sass:
 
 # Add any plugins
 plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jemoji
