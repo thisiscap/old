@@ -39,21 +39,29 @@
 
   <body>
 
-    <main class="" id="content">
+    <header>
+      <div class="content-wrapper">
+        <h1>Chris Porter <span class="secondary-line">Graphic Designer</span></h1>
+      </div>
+    </header>
 
-      {% comment %} Output content from child templates {% endcomment %}
-      {{ content }}
-
+    <main>
+      <div class="content-wrapper">
+        {% comment %} Output content from child templates {% endcomment %}
+        {{ content }}
+      </div>
     </main>
 
     <footer>
-      <p>That's all folks. :point_up: <a href="#content">to the top</a></p>
-      <p>Copyright 2018</p>
+      <div class="content-wrapper">
+        <p>That's all folks. <a href="#">Back to the top? :point_up:</a></p>
+        <p><span class="footnote">Copyright 2018</span></p>
+      </div>
     </footer>
 
     <!-- Load remaining CSS styles -->
     <noscript id="deferred-styles">
-      <link rel="stylesheet" type="text/css" href="/assets/css/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="/css/chris-porter.css"/>
     </noscript>
     <script>
       var loadDeferredStyles = function() {

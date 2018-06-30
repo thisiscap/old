@@ -2,6 +2,105 @@
 // Styles
 //
 
-.test {
-  background-color: red;
+// Variables
+
+$gutter: .9rem;
+
+// Globals
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+header {
+  padding: $gutter;
+
+  // Heading
+  h1 {
+    font-weight: normal;
+  }
+
+  span.secondary-line {}
+}
+
+main {
+  padding: $gutter $gutter 3rem;
+
+  // Headings
+  h2 {
+    font-weight: normal;
+  }
+
+  // Paragraphs
+  p {}
+
+  em,
+  i {}
+
+  strong,
+  b {}
+
+  span.most-recent {}
+
+  // Links
+  a {
+    &:link {
+      text-decoration: none;
+    }
+    &:visited {}
+    &:hover {}
+    &:active {}
+  }
+
+  // Lists
+  ul {
+    li {}
+  }
+
+}
+
+footer {
+  padding: $gutter;
+  background-color: grey;
+
+  span.footnote {
+    font-size: 1em;
+  }
+
+  // Emoji hover animation
+  @keyframes emoji-bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-.4rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  // Links
+  a {
+    &:link {
+      text-decoration: none;
+    }
+    &:visited {}
+    &:hover {
+      img.emoji {
+        animation: emoji-bounce 1s infinite;
+      }
+    }
+    &:active {}
+  }
+}
+
+// Wrapper
+.content-wrapper {
+  max-width: 44rem;
 }
