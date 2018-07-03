@@ -33,31 +33,31 @@
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% endif %}">
 
     <!-- Preload webfonts -->
-    <!-- <link rel="preload" href="/assets/fonts/roboto-thin-webfont.woff2" as="font" type="font/woff2" crossorigin> -->
+    <link rel="preload" href="/assets/fonts/hkgrotesk-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
 
   </head>
 
   <body>
 
     <header>
-      <div class="content-wrapper">
-        <h1>Chris Porter <span class="secondary-line">Graphic Designer</span></h1>
-      </div>
+      <h1>Chris Porter <span class="secondary-line">Graphic Designer</span></h1>
     </header>
 
     <main>
+      <h2>Brighton based graphic designer, currently working at <a href="https://05creative.com/">05creative*</a></h2>
+
       <div class="content-wrapper">
         {% comment %} Output content from child templates {% endcomment %}
         {{ content }}
       </div>
     </main>
 
-    <footer>
-      <div class="content-wrapper">
+    <div class="content-wrapper">
+      <footer>
         <p>That's all folks. <a href="#">Back to the top? :point_up:</a></p>
         <p><span class="footnote">Copyright 2018</span></p>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- Load remaining CSS styles -->
     <noscript id="deferred-styles">

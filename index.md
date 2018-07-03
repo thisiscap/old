@@ -3,10 +3,7 @@ layout: default
 title: "Chris Porter is a Graphic Designer"
 description: "Brighton based graphic designer currently working for 05creative*. I help people find meaningful, creative solutions to their unique challenges"
 ---
-
-## Brighton based graphic designer, currently working at [05creative*](https://05creative.com/)
-
-I help people find meaningful, creative solutions to their unique challenges. I enjoy working with people who love what they do. Most recently I helped launch a new brand and website for Just Economics, a research organisation for social change.
+I help people find meaningful, creative solutions to their unique challenges. I enjoy working with people who love what they do. Most recently I helped launch a [new brand and website for Just Economics](https://05creative.com/just-economics), a research organisation for social change.
 
 Branding is at the core of my practise, if you would like to see examples of my work, I am happy to send out my portfolio of my work if you get in touch at hello(at)christopherporter.co.uk.
 
