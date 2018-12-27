@@ -1,0 +1,53 @@
+//
+// SASS variables, mixins and placeholders
+//
+
+// Variables
+
+$gutter: .9rem;
+$darkGrey: #333333;
+$selection: yellow;
+
+$colours: (
+  primary: #333333,
+  secondary: tomato,
+  selection: yellow
+);
+
+$measurements: (
+  siteWidth: 1470px,
+  siteGutter: .9rem,
+  contentWidth: 1230px
+);
+
+$breakpoints: (
+  smallBreakpoint: 600px,
+  mediumBreakpoint: 800px,
+  largeBreakpoint: 1000px,
+  superBreakpoint: 1200px
+);
+
+// Mixins
+
+@mixin mobileOnwards {
+  @media (min-width: map-get($breakpoints, smallBreakpoint)) {
+    @content;
+  }
+}
+@mixin tabletOnwards {
+  @media (min-width: map-get($breakpoints, mediumBreakpoint)) {
+    @content;
+  }
+}
+@mixin desktopOnwards {
+  @media (min-width: map-get($breakpoints, largeBreakpoint)) {
+    @content;
+  }
+}
+@mixin desktopHdOnwards {
+  @media (min-width: map-get($breakpoints, superBreakpoint)) {
+    @content;
+  }
+}
+
+// Placeholders

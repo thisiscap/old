@@ -1,30 +1,17 @@
 ---
 layout: default
-title: "Chris Porter is a Graphic Designer"
-description: "Brighton based graphic designer currently working for 05creative*. I help people find meaningful, creative solutions to their unique challenges"
+title: "Chris Porter, Graphic Designer"
+description: "Brighton based graphic designer currently working for 05creative*. Helping people find meaningful, creative solutions to their unique challenges"
 ---
-I help people find meaningful, creative solutions to their unique challenges. I enjoy working with people who love what they do. Most recently I helped launch a [new brand and website for Just Economics](https://05creative.com/just-economics), a research organisation for social change.
 
-Branding is at the core of my practise, if you would like to see examples of my work, I am happy to send out my portfolio of my work if you get in touch at hello(at)christopherporter.co.uk.
+Working across the physical and digital with a keen interest in all things tactile. I see design as a collaborative process and that great work comes from working with people who love what they do.
 
-During my career I have been lucky to have worked with some great people including:
+Some recent projects I have worked on include:
 
-- [Universal Music](https://www.universalmusic.com/)
-- [BHWS Deaf Children’s Society](http://www.bhwsdcs.org.uk/)
-- [Heritage Lottery Fund](https://www.hlf.org.uk/)
-- [Create Bespoke](https://www.createbespoke.co.uk/)
-- [TEDx Brighton](https://tedxbrighton.com/)
-- [The Women’s Budget Group](https://wbg.org.uk/)
-- [#ge2017forwomen](https://ge2017forwomen.uk/)
-- [Just Economics](https://www.justeconomics.co.uk/)
-- [John Graham](http://johngraham.co/)
-- [East Studio](https://eaststudio.co.uk/)
+- The design for [No Royal Road](https://example.com "Open the digital PDF"), a report on the embracing of uncertainty and unpredictability of advocacy in the evaluation of social change.
 
-Interested in working together? All great projects start with a conversation - get in touch at hello(at)christopherporter.co.uk.
+I have been fortune to have worked with some great people including _Universal Music_, the _Heritage Lottery Fund_ and _TEDx Brighton_.
 
-Elsewhere on the web:
+If you are interested in working together or would like to see more of my work, get in touch and say hello(at)christopherporter.co.uk
 
-- [LinkedIn](https://www.linkedin.com/in/chrisporterdesigner/)
-- [Github](https://github.com/thisiscap/)
-- [Tumblr](https://chrisporters.tumblr.com/)
-- [Are.na](https://www.are.na/chrispy-p/)
+I can be also found elsewhere on [LinkedIn](https://www.linkedin.com/in/chrisporterdesigner/ "Professional malarkey"), [Github](https://github.com/thisiscap/ "Digital projects, including this website"), [Tumblr](https://chrisporters.tumblr.com/ "Very occasional posts, mostly photos") &amp; [Are.na](https://www.are.na/chrispy-p/ "Visual collections").

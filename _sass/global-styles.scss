@@ -1,23 +1,14 @@
 //
-// Styles
+// Global (site wide) styles
 //
 
-// Variables
+@import "reset";
+@import "sass";
+@import "typography";
 
-$gutter: .9rem;
-$darkGrey: #333333;
-
-// Webfont
-
-@font-face {
-  font-family: 'hk_groteskmedium';
-  src: url('/assets/fonts/hkgrotesk-medium-webfont.woff2') format('woff2'),
-       url('/assets/fonts/hkgrotesk-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+::selection {
+  background-color: $selection;
 }
-
-// Globals
 
 html,
 body {
@@ -25,13 +16,14 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'hk_groteskmedium', "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkGrey;
+  font-family: 'Barlow Semi Condensed', 'system-ui', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: map-get($colours, primary);
 }
 
 body {
   max-width: 1200px;
   margin: 0 auto;
+  line-height: 1.45;
 }
 
 header {
@@ -41,10 +33,13 @@ header {
   h1 {
     font-weight: normal;
     font-size: 38px;
+    line-height: 1.2;
   }
 
   span.secondary-line {
     color: #999999;
+
+    // @include tabletOnwards {}
   }
 }
 
@@ -55,6 +50,7 @@ main {
   h2 {
     font-weight: normal;
     font-size: 35px;
+    line-height: 1.2;
     color: black;
     margin-top: 300px;
     max-width: 692px;
@@ -75,13 +71,20 @@ main {
 
   span.most-recent {}
 
+  span.drop-word {}
+
   // Links
   a {
     &:link {
       text-decoration: none;
+      color: tomato;
     }
-    &:visited {}
-    &:hover {}
+    &:visited {
+      color: tomato;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
     &:active {}
   }
 
