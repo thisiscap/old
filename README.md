@@ -1,6 +1,7 @@
-# Chris porter
+# Welcome
 
-Simple personal website.
+This is a lightweight personal website.
 
-- Hosted using Github Pages and running on Jekyll, to get it up and running locally [follow this guide](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/). Work on the `development` then push the changes to `master` to put them live.
-- Site uses *HK Grotesk* by [Hanken Design Co.](https://hanken.co/)
+- It’s hosted using Github Pages (using Jekyll), to get it up and running locally [follow this guide](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+- Develop on the `development` then push the changes to `master` to put them live
+- This repo is [setup with a custom domain](https://help.github.com/articles/custom-domain-redirects-for-github-pages-sites/)
