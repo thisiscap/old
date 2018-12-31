@@ -33,34 +33,34 @@
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% endif %}">
 
     <!-- Preload webfonts -->
-    <link rel="preload" href="/assets/fonts/hkgrotesk-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/hkgrotesk-medium-webfont.woff2" as="font" type="font/woff2" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i" rel="stylesheet">
 
+    <!-- Critical CSS -->
+    <style>
+
+    </style>
 
   </head>
 
   <body>
 
-    <header>
-      <h1>Chris Porter <span class="secondary-line">Graphic Designer</span></h1>
-    </header>
+    <div class="wrapper">
 
-    <main>
-      <h2>Brighton based graphic designer, currently working at <a href="https://05creative.com/" title="Check out our website">05creative*</a>. Interested in helping people find meaningful, creative solutions to their unique challenges.</h2>
+      <header>
+        <h1>Chris Porter <span class="secondary-line">Graphic Designer</span></h1>
+      </header>
 
-      <div class="content-wrapper">
+      <main>
+        <h2>Brighton based graphic designer, currently working at <a href="https://05creative.com/" title="Check out our website">05creative*</a>. Interested in helping people find meaningful, creative solutions to their unique challenges.</h2>
         {% comment %} Output content from child templates {% endcomment %}
         {{ content }}
-      </div>
-    </main>
+      </main>
 
-    <div class="content-wrapper">
       <footer>
         <p>That&#39;s all for now. <a href="#">Jump back to the top? :point_up:</a></p>
         <p><span class="footnote">&#169; 2018 &#124; Website set in <a href="https://github.com/jpt/barlow">&lsquo;Barlow Semi Condensed&rsquo; by Jeremy Tribby</a></span></p>
       </footer>
+
     </div>
 
     <!-- Load remaining CSS styles -->

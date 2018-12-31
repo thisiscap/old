@@ -7,7 +7,7 @@
 @import "typography";
 
 ::selection {
-  background-color: $selection;
+  background-color: map-get($colours, yellow);
 }
 
 html,
@@ -17,70 +17,80 @@ body {
   padding: 0;
 
   font-family: 'Barlow Semi Condensed', 'system-ui', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  color: map-get($colours, primary);
+  color: map-get($colours, darkgrey);
 }
 
 body {
-  max-width: 1200px;
+  max-width: map-get($measurements, siteWidth);
   margin: 0 auto;
+  font-size: 75%;
   line-height: 1.45;
+
+  @include mobileOnwards {
+    font-size: 90%;
+  }
+  @include tabletOnwards {
+    font-size: 100%;
+  }
 }
 
+div.wrapper {
+  max-width: map-get($measurements, contentWidth);
+}
+
+//
+// Header
+//
+
 header {
-  padding: $gutter;
+  padding: map-get($measurements, siteGutter);
 
   // Heading
   h1 {
     font-weight: normal;
-    font-size: 38px;
+    font-size: 2.375em;
     line-height: 1.2;
   }
 
   span.secondary-line {
-    color: #999999;
+    color: map-get($colours, lightgrey);
+    display: block;
 
-    // @include tabletOnwards {}
+    @include mobileOnwards {
+      display: inline-block;
+    }
   }
 }
 
-main {
-  padding: $gutter $gutter 3rem;
+//
+// Main
+//
 
-  // Headings
+main {
+  padding: map-get($measurements, siteGutter) map-get($measurements, siteGutter) 5rem;
+
   h2 {
     font-weight: normal;
-    font-size: 35px;
+    font-size: 2.1875em;
     line-height: 1.2;
     color: black;
-    margin-top: 300px;
-    max-width: 692px;
+    margin: 18.75rem 0 2rem;
+    max-width: 660px;
   }
 
-  // Paragraphs
   p {
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 1.2;
     margin: .5rem 0 .8rem;
   }
 
-  em,
-  i {}
-
-  strong,
-  b {}
-
-  span.most-recent {}
-
-  span.drop-word {}
-
-  // Links
   a {
     &:link {
       text-decoration: none;
-      color: tomato;
+      color: map-get($colours, red);
     }
     &:visited {
-      color: tomato;
+      color: map-get($colours, red);
     }
     &:hover {
       text-decoration: underline;
@@ -88,19 +98,35 @@ main {
     &:active {}
   }
 
-  // Lists
   ul {
-    li {}
+    list-style-type: none;
+    padding-bottom: .15rem;
+
+    li {
+      font-size: 1.375em;
+      line-height: 1.2;
+      margin: .5rem 0 .8rem;
+      text-indent: map-get($measurements, siteGutter);
+    }
   }
 
 }
 
+//
+// Footer
+//
+
 footer {
-  padding: $gutter;
-  border-bottom: 20px solid black;
+  padding: map-get($measurements, siteGutter);
+  border-bottom: 5px solid map-get($colours, navy);
+  font-size: 14px;
+
+  @include mobileOnwards {
+    font-size: 16px;
+  }
 
   span.footnote {
-    font-size: 22px;
+    color: map-get($colours, lightgrey);
   }
 
   // Emoji hover animation
@@ -124,15 +150,9 @@ footer {
     &:visited {}
     &:hover {
       img.emoji {
-        animation: emoji-bounce 1s infinite;
+        animation: 'emoji-bounce' 1s infinite;
       }
     }
     &:active {}
   }
-}
-
-// Wrapper
-.content-wrapper {
-  max-width: 692px;
-  margin-left: 100px;
 }
