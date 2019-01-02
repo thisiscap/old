@@ -17,5 +17,6 @@ If you are interested in working together or would like to see examples of my wo
 
 I can be also found elsewhere on [LinkedIn](https://www.linkedin.com/in/chrisporterdesigner/ "Professional malarkey"), [Github](https://github.com/thisiscap/ "Digital projects, including this website"), [Tumblr](https://chrisporters.tumblr.com/ "Very occasional posts, mostly photos") and [Are.na](https://www.are.na/chrispy-p/ "Visual collections").
 
-<sup>1</sup> Such as brand identities, magazines, books, signage, packaging…
-<sup>2</sup> Like websites, editorial illustrations, social assets, animated videos…
+<span class="footnote"><sup>1</sup> Such as brand identities, magazines, books, signage, packaging…</span>
+
+<span class="footnote"><sup>2</sup> Like websites, editorial illustrations, social assets, animated videos…</span>
